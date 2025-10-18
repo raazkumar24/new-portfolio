@@ -213,7 +213,7 @@ const Home = () => {
             {/* CTA Buttons - Responsive stacking on small screens */}
             <motion.div
               variants={item}
-              className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-12 w-full max-w-sm sm:max-w-none mx-auto lg:mx-0"
+              className="flex flex-row justify-center lg:justify-start gap-4 mb-12 w-full max-w-sm sm:max-w-none mx-auto lg:mx-0"
             >
               {/* Primary button (Download CV) */}
               <Button variant="primary" size="lg" className="group w-full sm:w-auto">
@@ -271,7 +271,7 @@ const Home = () => {
             whileTap="hover"
           >
             {/* Fixed size container for the image and effects */}
-            <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+            <div className="relative w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96">
               {/* Main circular image container */}
               <motion.div
                 className="absolute inset-0 rounded-full overflow-hidden shadow-xl border-8 border-white/90 backdrop-blur-sm dark:border-gray-800/90"
