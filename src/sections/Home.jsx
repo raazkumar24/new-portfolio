@@ -219,7 +219,7 @@ const Home = () => {
               <Button variant="primary" size="lg" className="group w-full sm:w-auto">
                 <span className="flex items-center justify-center">
                   <FiDownload className="mr-3 w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:-translate-y-1 group-active:translate-y-1" />
-                  <span className="text-sm sm:text-base">Download CV</span>
+                  <span className="text-xs sm:text-base">Download CV</span>
                   <FiArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 opacity-0 transition-all group-hover:opacity-100 group-hover:ml-3 group-active:opacity-100 group-active:ml-3" />
                 </span>
               </Button>
@@ -235,7 +235,7 @@ const Home = () => {
                 }
               >
                 <span className="flex items-center justify-center">
-                  <span className="text-sm sm:text-base">Contact Me</span>
+                  <span className="text-xs sm:text-base">Contact Me</span>
                   <FiArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 opacity-0 transition-all group-hover:opacity-100 group-active:opacity-100 group-hover:ml-3 group-focus:ml-3" />
                 </span>
               </Button>
