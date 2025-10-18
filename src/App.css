@@ -1,0 +1,149 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #6366f1, #8b5cf6);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #4f46e5, #7c3aed);
+}
+
+/* Animation for buttons */
+/* button {
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+} */
+
+
+/* Add to your global CSS */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+
+
+.profile-container:hover .floating-shape {
+  animation: float 4s ease-in-out infinite;
+}
+
+.profile-container:hover .tech-badge {
+  filter: drop-shadow(0 5px 5px rgba(99, 102, 241, 0.2));
+}
+
+
+/* Profile image container constraints */
+.profile-container {
+  max-width: 100%;
+  overflow: visible;
+}
+
+/* Smooth transitions */
+img {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* Custom scrollbar for tabs (hidden in the component) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animation for the floating element */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(12deg); }
+  50% { transform: translateY(-10px) rotate(12deg); }
+  100% { transform: translateY(0px) rotate(12deg); }
+}
+
+.rotate-12 {
+  animation: float 4s ease-in-out infinite;
+}
+
+
+/* Add this to your main CSS file */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* For the project image placeholders */
+.project-image-placeholder {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
+}
+
+
+
+/* Add these styles to your main CSS file */
+.skill-card {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-bar {
+  transition: box-shadow 0.3s ease;
+}
+
+.skill-bar:hover {
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+.tech-tag {
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+
+/* Form input focus effects */
+.form-input:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+/* Contact card hover effect */
+.contact-card:hover {
+  transform: translateX(5px);
+}
