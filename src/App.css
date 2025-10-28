@@ -62,6 +62,25 @@ img {
 }
 
 
+/* --- Typewriter Blinking Cursor --- */
+.typewriter::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 6px;
+  color: #6366f1; /* Indigo color to match your theme */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+
 /* Custom scrollbar for tabs (hidden in the component) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

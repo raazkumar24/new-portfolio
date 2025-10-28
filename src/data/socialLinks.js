@@ -1,7 +1,7 @@
 export const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com",
+    url: "https://github.com/raazkumar24",
     icon: "FiGithub",
     color:
       "hover:text-gray-700 focus:text-gray-700 active:text-gray-700 dark:hover:text-gray-300 dark:focus:text-gray-300 dark:active:text-gray-300",
@@ -9,7 +9,7 @@ export const socialLinks = [
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/raj-shekhar-44887338b/",
     icon: "FiLinkedin",
     color:
       "hover:text-blue-600 focus:text-blue-600 active:text-blue-600 dark:hover:text-blue-400 dark:focus:text-blue-400 dark:active:text-blue-400",
@@ -25,7 +25,7 @@ export const socialLinks = [
   },
   {
     name: "Email",
-    url: "mailto:example@example.com",
+    url: "mailto:raazverma625@gmail.com",
     icon: "FiMail",
     color:
       "hover:text-pink-500 focus:text-pink-500 active:text-pink-500 dark:hover:text-pink-400 dark:focus:text-pink-400 dark:active:text-pink-400",

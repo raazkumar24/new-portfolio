@@ -19,7 +19,6 @@ import { FaXTwitter } from "react-icons/fa6"; // Updated Twitter icon
 import { DiReact, DiGithubAlt } from "react-icons/di"; // Devicons for tech logos
 import { SiFigma } from "react-icons/si"; // Simple Icons for modern tools
 
-
 // Import utility components (assuming correct paths)
 import Button from "../components/Button";
 import AnimateBg from "../components/AnimateBg";
@@ -41,7 +40,7 @@ const Home = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.15, // Delay between each child item's animation
-        delayChildren: 0.3,    // Initial delay before first child starts
+        delayChildren: 0.3, // Initial delay before first child starts
       },
     },
   };
@@ -138,14 +137,18 @@ const Home = () => {
     },
     {
       // FiCode Icon - Purple theme (General dev/code)
-      icon: <FiCode size={24} className="text-purple-600 dark:text-purple-400" />,
+      icon: (
+        <FiCode size={24} className="text-purple-600 dark:text-purple-400" />
+      ),
       position: "bottom-4 right-4",
       color:
         "bg-purple-500/20 border-purple-400/30 dark:bg-purple-600/30 dark:border-purple-500/40",
     },
     {
       // GitHub Icon - Neutral Gray theme
-      icon: <DiGithubAlt size={24} className="text-gray-800 dark:text-gray-400" />,
+      icon: (
+        <DiGithubAlt size={24} className="text-gray-800 dark:text-gray-400" />
+      ),
       position: "top-4 right-4",
       color:
         "bg-gray-500/20 border-gray-400/30 dark:bg-gray-600/30 dark:border-gray-500/40",
@@ -179,7 +182,6 @@ const Home = () => {
         >
           {/* Text content area */}
           <div className="text-center lg:text-left lg:w-1/2">
-            
             {/* Welcome Badge */}
             <motion.div variants={item}>
               <div className="inline-block px-4 py-2 mb-6 bg-indigo-100 rounded-full border border-indigo-200 dark:bg-indigo-900/30 dark:border-indigo-800">
@@ -206,7 +208,7 @@ const Home = () => {
             <motion.div variants={item}>
               <h2
                 ref={textRef}
-                className="text-2xl sm:text-3xl md:text-4xl font-medium text-gray-600 dark:text-gray-400 mb-4 lg:mb-8 h-12"
+                className="typewriter text-2xl sm:text-3xl md:text-4xl font-medium text-gray-600 dark:text-gray-400 mb-4 lg:mb-8 h-12"
               ></h2>
             </motion.div>
 
@@ -216,13 +218,18 @@ const Home = () => {
               className="flex flex-row justify-center lg:justify-start gap-4 mb-12 w-full max-w-sm sm:max-w-none mx-auto lg:mx-0"
             >
               {/* Primary button (Download CV) */}
-              <Button variant="primary" size="lg" className="group w-full sm:w-auto">
+              <Button
+                variant="primary"
+                size="lg"
+                className="group w-full sm:w-auto"
+              >
                 <span className="flex items-center justify-center">
                   <FiDownload className="mr-3 w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:-translate-y-1 group-active:translate-y-1" />
                   <span className="text-xs sm:text-base">Download CV</span>
                   <FiArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 opacity-0 transition-all group-hover:opacity-100 group-hover:ml-3 group-active:opacity-100 group-active:ml-3" />
                 </span>
               </Button>
+
               {/* Secondary button (Contact Me) - Scrolls to contact section */}
               <Button
                 variant="secondary"
@@ -316,19 +323,32 @@ const Home = () => {
               <motion.div
                 className="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-indigo-400/20 backdrop-blur-sm floating-shape z-[-1] opacity-70"
                 animate={{ y: [0, -15, 0], x: [0, -10, 0] }}
-                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 10,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
               <motion.div
                 className="absolute -bottom-10 -right-10 w-28 h-28 rotate-12 rounded-full bg-purple-400/20 backdrop-blur-sm floating-shape z-[-1] opacity-70"
-                animate={{ y: [0, 15, 0], x: [0, 10, 0], rotate: [12, 18, 12] }}
-                transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                animate={{
+                  y: [0, 15, 0],
+                  x: [0, 10, 0],
+                  rotate: [12, 18, 12],
+                }}
+                transition={{
+                  duration: 9,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                }}
               />
 
               {/* Tech Badges - Floating and bouncing icons */}
               {floatingBadges.map((badge, index) => (
                 <motion.div
                   key={index}
-                  className={`absolute ${badge.position} w-14 h-14 ${badge.color} backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg border tech-badge`}
+                  className={`absolute ${badge.position} w-10 h-10 md:w-14 md:h-14 ${badge.color} backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg border tech-badge`}
                   // Initial hidden state with rotation
                   initial={{ scale: 0, rotate: -45 }}
                   animate={{
@@ -361,7 +381,6 @@ const Home = () => {
                   {badge.icon}
                 </motion.div>
               ))}
-
             </div>
           </motion.div>
         </motion.div>
