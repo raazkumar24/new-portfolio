@@ -391,7 +391,7 @@ const About = () => {
               {/* Profile image with fallback */}
               <div className="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
                 <img 
-                  src="Profile-img.jpg" 
+                  src="Second-pic.jpg" 
                   alt="Raj Shekhar - Frontend Developer"
                   className="w-full h-full object-cover group-hover:scale-105 hover:scale-105 transition-transform duration-500"
                   onError={(e) => {

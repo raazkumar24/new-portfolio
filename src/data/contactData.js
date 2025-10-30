@@ -18,8 +18,8 @@ export const contactMethods = [
   {
     icon: 'FiMail',
     title: "Email",
-    description: "contact@raj.dev",
-    link: "mailto:contact@raj.dev",
+    description: "raazverma625@gmail.com",
+    link: "raazverma625@gmail.com",
     action: "Send Email",
     color: "text-pink-500 active:text-pink-500 dark:hover:text-pink-400 dark:active:text-pink-400"
   }
@@ -28,13 +28,13 @@ export const contactMethods = [
 export const socialLinks = [
   {
     icon: 'FiGithub',
-    url: "https://github.com/yourusername",
+    url: "https://github.com/raazkumar24",
     name: "GitHub",
     color: "hover:text-gray-700 active:text-gray-700 dark:hover:text-gray-300 dark:active:text-gray-300"
   },
   {
     icon: 'FiLinkedin',
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://www.linkedin.com/in/raj-shekhar-44887338b/",
     name: "LinkedIn",
     color: "hover:text-blue-600 active:text-blue-600 dark:hover:text-blue-400  dark:active:text-blue-400"
   },
@@ -52,7 +52,7 @@ export const socialLinks = [
   },
   {
     icon: 'FaWhatsapp',
-    url: "https://wa.me/919876543210",
+    url: "https://wa.me/919646907893",
     name: "WhatsApp",
     color: "hover:text-green-500 active:text-green-500 dark:hover:text-green-400   dark:active:text-green-400"
   },

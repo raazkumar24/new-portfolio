@@ -222,6 +222,9 @@ const Home = () => {
                 variant="primary"
                 size="lg"
                 className="group w-full sm:w-auto"
+                as="a"
+                href="cv.pdf"
+                download="cv.pdf"
               >
                 <span className="flex items-center justify-center">
                   <FiDownload className="mr-3 w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:-translate-y-1 group-active:translate-y-1" />
@@ -285,9 +288,9 @@ const Home = () => {
                 initial={false}
               >
                 <img
-                  src="/Profile-img.jpg"
+                  src="/Profile-pic.jpg"
                   alt="Raj Shekhar"
-                  className="w-full h-full object-cover grayscale-[15%] transition-all duration-500"
+                  className="w-full h-full object-cover grayscale-[10%] group-hover:scale-105 hover:scale-105 transition-transform duration-500"
                 />
               </motion.div>
 
@@ -400,7 +403,11 @@ const Home = () => {
               className="w-1 h-2 sm:h-3 bg-gradient-to-b from-indigo-400 to-purple-500 dark:from-indigo-300 dark:to-purple-400 rounded-full mt-1"
               // Pulsing dot inside the scroll container
               animate={{ y: [0, 4, 0] }}
-              transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
+              transition={{
+                repeat: Infinity,
+                duration: 1.8,
+                ease: "easeInOut",
+              }}
             />
           </div>
           <span className="mt-1 sm:mt-2 text-xs text-indigo-500/80 dark:text-indigo-400/80 tracking-widest">
