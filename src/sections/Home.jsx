@@ -288,7 +288,7 @@ const Home = () => {
                 initial={false}
               >
                 <img
-                  src="/Profile-pic.jpg"
+                  src="/Avatar.jpg"
                   alt="Raj Shekhar"
                   className="w-full h-full object-cover grayscale-[10%] group-hover:scale-105 hover:scale-105 transition-transform duration-500"
                 />
